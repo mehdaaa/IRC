@@ -1,0 +1,9 @@
+/*sass --watch .\src\styles\sass\style.css:.\src\index.css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "reset";
+@import "app";
+@import "body";
+@import "header";
+@import "login";
+@import "main";
+@import "sidebar";

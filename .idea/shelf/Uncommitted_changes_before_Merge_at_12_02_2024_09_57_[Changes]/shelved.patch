@@ -1,0 +1,900 @@
+Index: client/src/styles/sass/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*sass --watch .\\src\\styles\\sass\\style.css:.\\src\\index.css*/\r\n@import url(\"https://fonts.googleapis.com/css2?family=Poppins&display=swap\");\r\n/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline; }\r\n\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block; }\r\n\r\nbody {\r\n  line-height: 1; }\r\n\r\nol, ul {\r\n  list-style: none; }\r\n\r\nblockquote, q {\r\n  quotes: none; }\r\n\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n  content: '';\r\n  content: none; }\r\n\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0; }\r\n\r\n.header {\r\n  font-family: 'Poppins', sans-serif;\r\n  background: #d9d9d9;\r\n  border-bottom: 1px solid black;\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;\r\n  height: 100%;\r\n  width: 100%;\r\n  grid-column: 1/11; }\r\n  .header > figure {\r\n    grid-column: 3/4;\r\n    display: grid; }\r\n    .header > figure > img {\r\n      width: 100%;\r\n      justify-self: center;\r\n      align-self: center; }\r\n  .header > p {\r\n    grid-column: 5/6;\r\n    justify-self: center;\r\n    align-self: center;\r\n    font-size: 125%; }\r\n\r\n.loginPage {\r\n  background-color: #c3cbdc;\r\n  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); }\r\n\r\n.headerLogin {\r\n  display: grid;\r\n  height: 50vh; }\r\n  .headerLogin > img {\r\n    width: 50%;\r\n    justify-self: center;\r\n    align-self: center; }\r\n\r\n.formLogin {\r\n  font-family: 'Poppins', sans-serif;\r\n  height: 50vh;\r\n  display: grid; }\r\n  .formLogin > form {\r\n    width: 25%;\r\n    height: 20%;\r\n    justify-self: center;\r\n    align-self: start;\r\n    margin: 5vh;\r\n    display: grid;\r\n    grid-template-rows: 1fr 1fr; }\r\n    .formLogin > form > input {\r\n      border-radius: 20px;\r\n      height: 60%;\r\n      width: 100%;\r\n      justify-self: center;\r\n      text-align: center;\r\n      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }\r\n    .formLogin > form > button {\r\n      border-radius: 20px;\r\n      height: 60%;\r\n      width: 45%;\r\n      justify-self: center;\r\n      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }\r\n    .formLogin > form > button:hover {\r\n      border-radius: 20px;\r\n      height: 60%;\r\n      width: 45%;\r\n      justify-self: center;\r\n      background-color: #2288C7;\r\n      color: white; }\r\n\r\n.main {\r\n  font-family: 'Poppins', sans-serif;\r\n  grid-row: 2/11;\r\n  grid-column: 4/11;\r\n  display: grid;\r\n  grid-template-rows: 0.5fr 9fr 0.5fr;\r\n  background: #d9d9d9;\r\n  border-top: 1px solid black; }\r\n  .main > .chat-header {\r\n    margin-top: 1vh;\r\n    display: grid;\r\n    grid-template-columns: 0.45fr 0.55fr;\r\n    height: 6.5vh; }\r\n    .main > .chat-header > figure {\r\n      display: grid; }\r\n      .main > .chat-header > figure > img {\r\n        padding-right: 0.5vh;\r\n        width: 9%;\r\n        justify-self: end;\r\n        align-self: center; }\r\n    .main > .chat-header > h3 {\r\n      justify-self: start;\r\n      align-self: center;\r\n      font-size: 2.5vh; }\r\n  .main > .chat-body {\r\n    background: white; }\r\n  .main > .chat-footer {\r\n    display: grid;\r\n    grid-template-columns: 7fr 3fr;\r\n    background: #d9d9d9; }\r\n    .main > .chat-footer > input {\r\n      width: 80%;\r\n      height: 80%;\r\n      justify-self: end;\r\n      align-self: center;\r\n      border-radius: 20px;\r\n      border-color: black;\r\n      font-size: 2vh; }\r\n    .main > .chat-footer > button {\r\n      justify-self: start;\r\n      width: 10.5%;\r\n      height: 95%;\r\n      align-self: center;\r\n      border-radius: 20px;\r\n      font-size: 3vh;\r\n      border-color: black;\r\n      background-color: white; }\r\n    .main > .chat-footer > button:hover {\r\n      justify-self: start;\r\n      width: 10.5%;\r\n      height: 95%;\r\n      align-self: center;\r\n      border-radius: 20px;\r\n      font-size: 3vh;\r\n      border-color: black;\r\n      color: white;\r\n      background-color: #2288C7; }\r\n\r\n.sidebar {\r\n  font-family: 'Poppins', sans-serif;\r\n  grid-column: 1/4;\r\n  grid-row: 2/11;\r\n  border-right: 1px solid black;\r\n  background: #d9d9d9;\r\n  display: grid;\r\n  grid-template-rows: 0.5fr 9.5fr;\r\n  border-top: 1px solid black; }\r\n  .sidebar > .titleSideBar {\r\n    margin-top: 1vh;\r\n    height: 6.5vh;\r\n    display: grid;\r\n    grid-template-columns: 0.45fr 0.55fr; }\r\n    .sidebar > .titleSideBar > figure {\r\n      display: grid; }\r\n      .sidebar > .titleSideBar > figure > img {\r\n        padding-right: 0.5vh;\r\n        width: 20%;\r\n        justify-self: end;\r\n        align-self: center; }\r\n    .sidebar > .titleSideBar > .channels {\r\n      justify-self: start;\r\n      align-self: center;\r\n      font-size: 2.5vh; }\r\n  .sidebar > ul {\r\n    background-color: white;\r\n    width: 100%;\r\n    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;\r\n    justify-self: center;\r\n    display: grid;\r\n    overflow: auto; }\r\n    .sidebar > ul > li {\r\n      height: 7vh;\r\n      display: grid; }\r\n      .sidebar > ul > li > button {\r\n        justify-self: center;\r\n        align-self: center;\r\n        border-color: black;\r\n        border-radius: 10px;\r\n        height: 60%;\r\n        width: 70%;\r\n        background: #d9d9d9;\r\n        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }\r\n      .sidebar > ul > li > button:hover {\r\n        border-radius: 10px;\r\n        height: 60%;\r\n        width: 70%;\r\n        justify-self: center;\r\n        background-color: #2288C7;\r\n        color: white;\r\n        border-color: black; }\r\n    .sidebar > ul > p {\r\n      padding: 3vh;\r\n      font-size: 2.5vh;\r\n      text-align: center; }\r\n\r\n.body {\r\n  display: grid;\r\n  grid-auto-rows: 1fr 9fr;\r\n  grid-template-columns: repeat(10, 1fr);\r\n  height: 100vh; }\r\n\r\n/*# sourceMappingURL=style.css.map */\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/client/src/styles/sass/style.css b/client/src/styles/sass/style.css
+--- a/client/src/styles/sass/style.css	
++++ b/client/src/styles/sass/style.css	
+@@ -22,217 +22,257 @@
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+-  vertical-align: baseline; }
++  vertical-align: baseline;
++}
+ 
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+-  display: block; }
++  display: block;
++}
+ 
+ body {
+-  line-height: 1; }
++  line-height: 1;
++}
+ 
+ ol, ul {
+-  list-style: none; }
++  list-style: none;
++}
+ 
+ blockquote, q {
+-  quotes: none; }
++  quotes: none;
++}
+ 
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+-  content: '';
+-  content: none; }
++  content: "";
++  content: none;
++}
+ 
+ table {
+   border-collapse: collapse;
+-  border-spacing: 0; }
++  border-spacing: 0;
++}
+ 
+ .header {
+-  font-family: 'Poppins', sans-serif;
+-  background: #d9d9d9;
++  font-family: "Poppins", sans-serif;
++  background: rgb(217, 217, 217);
+   border-bottom: 1px solid black;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   height: 100%;
+   width: 100%;
+-  grid-column: 1/11; }
+-  .header > figure {
+-    grid-column: 3/4;
+-    display: grid; }
+-    .header > figure > img {
+-      width: 100%;
+-      justify-self: center;
+-      align-self: center; }
+-  .header > p {
+-    grid-column: 5/6;
+-    justify-self: center;
+-    align-self: center;
+-    font-size: 125%; }
++  grid-column: 1/11;
++}
++.header > figure {
++  grid-column: 3/4;
++  display: grid;
++}
++.header > figure > img {
++  width: 100%;
++  justify-self: center;
++  align-self: center;
++}
++.header > p {
++  grid-column: 5/6;
++  justify-self: center;
++  align-self: center;
++  font-size: 125%;
++}
+ 
+ .loginPage {
+   background-color: #c3cbdc;
+-  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); }
++  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
++}
+ 
+ .headerLogin {
+   display: grid;
+-  height: 50vh; }
+-  .headerLogin > img {
+-    width: 50%;
+-    justify-self: center;
+-    align-self: center; }
++  height: 50vh;
++}
++.headerLogin > img {
++  width: 50%;
++  justify-self: center;
++  align-self: center;
++}
+ 
+ .formLogin {
+-  font-family: 'Poppins', sans-serif;
++  font-family: "Poppins", sans-serif;
+   height: 50vh;
+-  display: grid; }
+-  .formLogin > form {
+-    width: 25%;
+-    height: 20%;
+-    justify-self: center;
+-    align-self: start;
+-    margin: 5vh;
+-    display: grid;
+-    grid-template-rows: 1fr 1fr; }
+-    .formLogin > form > input {
+-      border-radius: 20px;
+-      height: 60%;
+-      width: 100%;
+-      justify-self: center;
+-      text-align: center;
+-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+-    .formLogin > form > button {
+-      border-radius: 20px;
+-      height: 60%;
+-      width: 45%;
+-      justify-self: center;
+-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+-    .formLogin > form > button:hover {
+-      border-radius: 20px;
+-      height: 60%;
+-      width: 45%;
+-      justify-self: center;
+-      background-color: #2288C7;
+-      color: white; }
++  display: grid;
++}
++.formLogin > form {
++  width: 25%;
++  height: 20%;
++  justify-self: center;
++  align-self: start;
++  margin: 5vh;
++  display: grid;
++  grid-template-rows: 1fr 1fr;
++}
++.formLogin > form > input {
++  border-radius: 20px;
++  height: 60%;
++  width: 100%;
++  justify-self: center;
++  text-align: center;
++  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
++}
++.formLogin > form > button {
++  border-radius: 20px;
++  height: 60%;
++  width: 45%;
++  justify-self: center;
++  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
++}
++.formLogin > form > button:hover {
++  border-radius: 20px;
++  height: 60%;
++  width: 45%;
++  justify-self: center;
++  background-color: #2288C7;
++  color: white;
++}
+ 
+ .main {
+-  font-family: 'Poppins', sans-serif;
++  font-family: "Poppins", sans-serif;
+   grid-row: 2/11;
+   grid-column: 4/11;
+   display: grid;
+   grid-template-rows: 0.5fr 9fr 0.5fr;
+-  background: #d9d9d9;
+-  border-top: 1px solid black; }
+-  .main > .chat-header {
+-    margin-top: 1vh;
+-    display: grid;
+-    grid-template-columns: 0.45fr 0.55fr;
+-    height: 6.5vh; }
+-    .main > .chat-header > figure {
+-      display: grid; }
+-      .main > .chat-header > figure > img {
+-        padding-right: 0.5vh;
+-        width: 9%;
+-        justify-self: end;
+-        align-self: center; }
+-    .main > .chat-header > h3 {
+-      justify-self: start;
+-      align-self: center;
+-      font-size: 2.5vh; }
+-  .main > .chat-body {
+-    background: white; }
+-  .main > .chat-footer {
+-    display: grid;
+-    grid-template-columns: 7fr 3fr;
+-    background: #d9d9d9; }
+-    .main > .chat-footer > input {
+-      width: 80%;
+-      height: 80%;
+-      justify-self: end;
+-      align-self: center;
+-      border-radius: 20px;
+-      border-color: black;
+-      font-size: 2vh; }
+-    .main > .chat-footer > button {
+-      justify-self: start;
+-      width: 10.5%;
+-      height: 95%;
+-      align-self: center;
+-      border-radius: 20px;
+-      font-size: 3vh;
+-      border-color: black;
+-      background-color: white; }
+-    .main > .chat-footer > button:hover {
+-      justify-self: start;
+-      width: 10.5%;
+-      height: 95%;
+-      align-self: center;
+-      border-radius: 20px;
+-      font-size: 3vh;
+-      border-color: black;
+-      color: white;
+-      background-color: #2288C7; }
++  background: rgb(217, 217, 217);
++  border-top: 1px solid black;
++}
++.main > .chat-header {
++  margin-top: 1vh;
++  display: grid;
++  grid-template-columns: 0.45fr 0.55fr;
++  height: 6.5vh;
++}
++.main > .chat-header > figure {
++  display: grid;
++}
++.main > .chat-header > figure > img {
++  padding-right: 0.5vh;
++  width: 9%;
++  justify-self: end;
++  align-self: center;
++}
++.main > .chat-header > h3 {
++  justify-self: start;
++  align-self: center;
++  font-size: 2.5vh;
++}
++.main > .chat-body {
++  background: white;
++}
++.main > .chat-footer {
++  display: grid;
++  grid-template-columns: 7fr 3fr;
++  background: rgb(217, 217, 217);
++}
++.main > .chat-footer > input {
++  width: 80%;
++  height: 80%;
++  justify-self: end;
++  align-self: center;
++  border-radius: 20px;
++  border-color: black;
++  font-size: 2vh;
++}
++.main > .chat-footer > button {
++  justify-self: start;
++  width: 10.5%;
++  height: 95%;
++  align-self: center;
++  border-radius: 20px;
++  font-size: 3vh;
++  border-color: black;
++  background-color: white;
++}
++.main > .chat-footer > button:hover {
++  justify-self: start;
++  width: 10.5%;
++  height: 95%;
++  align-self: center;
++  border-radius: 20px;
++  font-size: 3vh;
++  border-color: black;
++  color: white;
++  background-color: #2288C7;
++}
+ 
+ .sidebar {
+-  font-family: 'Poppins', sans-serif;
++  font-family: "Poppins", sans-serif;
+   grid-column: 1/4;
+   grid-row: 2/11;
+   border-right: 1px solid black;
+-  background: #d9d9d9;
++  background: rgb(217, 217, 217);
+   display: grid;
+   grid-template-rows: 0.5fr 9.5fr;
+-  border-top: 1px solid black; }
+-  .sidebar > .titleSideBar {
+-    margin-top: 1vh;
+-    height: 6.5vh;
+-    display: grid;
+-    grid-template-columns: 0.45fr 0.55fr; }
+-    .sidebar > .titleSideBar > figure {
+-      display: grid; }
+-      .sidebar > .titleSideBar > figure > img {
+-        padding-right: 0.5vh;
+-        width: 20%;
+-        justify-self: end;
+-        align-self: center; }
+-    .sidebar > .titleSideBar > .channels {
+-      justify-self: start;
+-      align-self: center;
+-      font-size: 2.5vh; }
+-  .sidebar > ul {
+-    background-color: white;
+-    width: 100%;
+-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+-    justify-self: center;
+-    display: grid;
+-    overflow: auto; }
+-    .sidebar > ul > li {
+-      height: 7vh;
+-      display: grid; }
+-      .sidebar > ul > li > button {
+-        justify-self: center;
+-        align-self: center;
+-        border-color: black;
+-        border-radius: 10px;
+-        height: 60%;
+-        width: 70%;
+-        background: #d9d9d9;
+-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+-      .sidebar > ul > li > button:hover {
+-        border-radius: 10px;
+-        height: 60%;
+-        width: 70%;
+-        justify-self: center;
+-        background-color: #2288C7;
+-        color: white;
+-        border-color: black; }
+-    .sidebar > ul > p {
+-      padding: 3vh;
+-      font-size: 2.5vh;
+-      text-align: center; }
++  border-top: 1px solid black;
++}
++.sidebar > .titleSideBar {
++  margin-top: 1vh;
++  height: 6.5vh;
++  display: grid;
++  grid-template-columns: 0.45fr 0.55fr;
++}
++.sidebar > .titleSideBar > figure {
++  display: grid;
++}
++.sidebar > .titleSideBar > figure > img {
++  padding-right: 0.5vh;
++  width: 20%;
++  justify-self: end;
++  align-self: center;
++}
++.sidebar > .titleSideBar > .channels {
++  justify-self: start;
++  align-self: center;
++  font-size: 2.5vh;
++}
++.sidebar > ul {
++  background-color: white;
++  width: 100%;
++  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
++  justify-self: center;
++  display: grid;
++  overflow: auto;
++}
++.sidebar > ul > li {
++  height: 7vh;
++  display: grid;
++}
++.sidebar > ul > li > button {
++  justify-self: center;
++  align-self: center;
++  border-color: black;
++  border-radius: 10px;
++  height: 60%;
++  width: 70%;
++  background: rgb(217, 217, 217);
++  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
++}
++.sidebar > ul > li > button:hover {
++  border-radius: 10px;
++  height: 60%;
++  width: 70%;
++  justify-self: center;
++  background-color: #2288C7;
++  color: white;
++  border-color: black;
++}
++.sidebar > ul > p {
++  padding: 3vh;
++  font-size: 2.5vh;
++  text-align: center;
++}
+ 
+ .body {
+   display: grid;
+   grid-auto-rows: 1fr 9fr;
+   grid-template-columns: repeat(10, 1fr);
+-  height: 100vh; }
++  height: 100vh;
++}
+ 
+ /*# sourceMappingURL=style.css.map */
+Index: client/src/styles/sass/style.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n\"version\": 3,\r\n\"mappings\": \"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\",\r\n\"sources\": [\"style.scss\",\"_reset.scss\",\"_header.scss\",\"_login.scss\",\"_main.scss\",\"_sidebar.scss\",\"_body.scss\"],\r\n\"names\": [],\r\n\"file\": \"style.css\"\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/client/src/styles/sass/style.css.map b/client/src/styles/sass/style.css.map
+--- a/client/src/styles/sass/style.css.map	
++++ b/client/src/styles/sass/style.css.map	
+@@ -1,7 +1,1 @@
+-{
+-"version": 3,
+-"mappings": "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",
+-"sources": ["style.scss","_reset.scss","_header.scss","_login.scss","_main.scss","_sidebar.scss","_body.scss"],
+-"names": [],
+-"file": "style.css"
+-}
++{"version":3,"sourceRoot":"","sources":["style.scss","_reset.scss","_header.scss","_login.scss","_main.scss","_sidebar.scss","_body.scss"],"names":[],"mappings":"AAAA;AACQ;ACDR;AAAA;AAAA;AAAA;AAKA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAaE;EACA;EACA;EACA;EACA;EACA;;;AAEF;AACA;AAAA;EAEE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;AAAA;EAEE;EACA;;;AAEF;EACE;EACA;;;AC9CF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AACA;EACE;EACA;EACA;;AAGJ;EACE;EACA;EACA;EACA;;;ACvBJ;EACE;EACA;;;AAGF;EACE;EACA;;AAEA;EACE;EACA;EACA;;;AAGJ;EACE;EACA;EACA;;AACE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EAEE;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;;AClDR;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AACA;EACE;;AACA;EACE;EACA;EACA;EACA;;AAGJ;EACE;EACA;EACA;;AAGJ;EACE;;AAGF;EACE;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACjEN;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;;AACA;EACE;EACA;EACA;EACA;;AAIJ;EACE;EACA;EACA;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EAEE;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAKJ;EACE;EACA;EACA;;;ACrEN;EACE;EACA;EACA;EACA","file":"style.css"}
+\ No newline at end of file
+Index: client/src/styles/sass/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*sass --watch .\\src\\styles\\sass\\style.css:.\\src\\index.css*/\r\n@import url(\"https://fonts.googleapis.com/css2?family=Poppins&display=swap\");\r\n/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline; }\r\n\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block; }\r\n\r\nbody {\r\n  line-height: 1; }\r\n\r\nol, ul {\r\n  list-style: none; }\r\n\r\nblockquote, q {\r\n  quotes: none; }\r\n\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n  content: '';\r\n  content: none; }\r\n\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0; }\r\n\r\n.header {\r\n  font-family: 'Poppins', sans-serif;\r\n  background: #d9d9d9;\r\n  border-bottom: 1px solid black;\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;\r\n  height: 100%;\r\n  width: 100%;\r\n  grid-column: 1/11; }\r\n  .header > figure {\r\n    grid-column: 3/4;\r\n    display: grid; }\r\n    .header > figure > img {\r\n      width: 100%;\r\n      justify-self: center;\r\n      align-self: center; }\r\n  .header > p {\r\n    grid-column: 5/6;\r\n    justify-self: center;\r\n    align-self: center;\r\n    font-size: 125%; }\r\n\r\n.loginPage {\r\n  background-color: #c3cbdc;\r\n  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); }\r\n\r\n.headerLogin {\r\n  display: grid;\r\n  height: 50vh; }\r\n  .headerLogin > img {\r\n    width: 50%;\r\n    justify-self: center;\r\n    align-self: center; }\r\n\r\n.formLogin {\r\n  font-family: 'Poppins', sans-serif;\r\n  height: 50vh;\r\n  display: grid; }\r\n  .formLogin > form {\r\n    width: 25%;\r\n    height: 20%;\r\n    justify-self: center;\r\n    align-self: start;\r\n    margin: 5vh;\r\n    display: grid;\r\n    grid-template-rows: 1fr 1fr; }\r\n    .formLogin > form > input {\r\n      border-radius: 20px;\r\n      height: 60%;\r\n      width: 100%;\r\n      justify-self: center;\r\n      text-align: center;\r\n      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }\r\n    .formLogin > form > button {\r\n      border-radius: 20px;\r\n      height: 60%;\r\n      width: 45%;\r\n      justify-self: center;\r\n      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }\r\n    .formLogin > form > button:hover {\r\n      border-radius: 20px;\r\n      height: 60%;\r\n      width: 45%;\r\n      justify-self: center;\r\n      background-color: #2288C7;\r\n      color: white; }\r\n\r\n.main {\r\n  font-family: 'Poppins', sans-serif;\r\n  grid-row: 2/11;\r\n  grid-column: 4/11;\r\n  display: grid;\r\n  grid-template-rows: 0.5fr 9fr 0.5fr;\r\n  background: #d9d9d9;\r\n  border-top: 1px solid black; }\r\n  .main > .chat-header {\r\n    margin-top: 1vh;\r\n    display: grid;\r\n    grid-template-columns: 0.45fr 0.55fr;\r\n    height: 6.5vh; }\r\n    .main > .chat-header > figure {\r\n      display: grid; }\r\n      .main > .chat-header > figure > img {\r\n        padding-right: 0.5vh;\r\n        width: 9%;\r\n        justify-self: end;\r\n        align-self: center; }\r\n    .main > .chat-header > h3 {\r\n      justify-self: start;\r\n      align-self: center;\r\n      font-size: 2.5vh; }\r\n  .main > .chat-body {\r\n    background: white; }\r\n  .main > .chat-footer {\r\n    display: grid;\r\n    grid-template-columns: 7fr 3fr;\r\n    background: #d9d9d9; }\r\n    .main > .chat-footer > input {\r\n      width: 80%;\r\n      height: 80%;\r\n      justify-self: end;\r\n      align-self: center;\r\n      border-radius: 20px;\r\n      border-color: black;\r\n      font-size: 2vh; }\r\n    .main > .chat-footer > button {\r\n      justify-self: start;\r\n      width: 10.5%;\r\n      height: 95%;\r\n      align-self: center;\r\n      border-radius: 20px;\r\n      font-size: 3vh;\r\n      border-color: black;\r\n      background-color: white; }\r\n    .main > .chat-footer > button:hover {\r\n      justify-self: start;\r\n      width: 10.5%;\r\n      height: 95%;\r\n      align-self: center;\r\n      border-radius: 20px;\r\n      font-size: 3vh;\r\n      border-color: black;\r\n      color: white;\r\n      background-color: #2288C7; }\r\n\r\n.sidebar {\r\n  font-family: 'Poppins', sans-serif;\r\n  grid-column: 1/4;\r\n  grid-row: 2/11;\r\n  border-right: 1px solid black;\r\n  background: #d9d9d9;\r\n  display: grid;\r\n  grid-template-rows: 0.5fr 9.5fr;\r\n  border-top: 1px solid black; }\r\n  .sidebar > .titleSideBar {\r\n    margin-top: 1vh;\r\n    height: 6.5vh;\r\n    display: grid;\r\n    grid-template-columns: 0.45fr 0.55fr; }\r\n    .sidebar > .titleSideBar > figure {\r\n      display: grid; }\r\n      .sidebar > .titleSideBar > figure > img {\r\n        padding-right: 0.5vh;\r\n        width: 20%;\r\n        justify-self: end;\r\n        align-self: center; }\r\n    .sidebar > .titleSideBar > .channels {\r\n      justify-self: start;\r\n      align-self: center;\r\n      font-size: 2.5vh; }\r\n  .sidebar > ul {\r\n    background-color: white;\r\n    width: 100%;\r\n    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;\r\n    justify-self: center;\r\n    display: grid;\r\n    overflow: auto; }\r\n    .sidebar > ul > li {\r\n      height: 7vh;\r\n      display: grid; }\r\n      .sidebar > ul > li > button {\r\n        justify-self: center;\r\n        align-self: center;\r\n        border-color: black;\r\n        border-radius: 10px;\r\n        height: 60%;\r\n        width: 70%;\r\n        background: #d9d9d9;\r\n        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }\r\n      .sidebar > ul > li > button:hover {\r\n        border-radius: 10px;\r\n        height: 60%;\r\n        width: 70%;\r\n        justify-self: center;\r\n        background-color: #2288C7;\r\n        color: white;\r\n        border-color: black; }\r\n    .sidebar > ul > p {\r\n      padding: 3vh;\r\n      font-size: 2.5vh;\r\n      text-align: center; }\r\n\r\n.body {\r\n  display: grid;\r\n  grid-auto-rows: 1fr 9fr;\r\n  grid-template-columns: repeat(10, 1fr);\r\n  height: 100vh; }\r\n\r\n/*# sourceMappingURL=style.css.map */\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/client/src/styles/sass/style.css b/client/src/styles/sass/style.css
+--- a/client/src/styles/sass/style.css	
++++ b/client/src/styles/sass/style.css	
+@@ -22,217 +22,257 @@
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+-  vertical-align: baseline; }
++  vertical-align: baseline;
++}
+ 
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+-  display: block; }
++  display: block;
++}
+ 
+ body {
+-  line-height: 1; }
++  line-height: 1;
++}
+ 
+ ol, ul {
+-  list-style: none; }
++  list-style: none;
++}
+ 
+ blockquote, q {
+-  quotes: none; }
++  quotes: none;
++}
+ 
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+-  content: '';
+-  content: none; }
++  content: "";
++  content: none;
++}
+ 
+ table {
+   border-collapse: collapse;
+-  border-spacing: 0; }
++  border-spacing: 0;
++}
+ 
+ .header {
+-  font-family: 'Poppins', sans-serif;
+-  background: #d9d9d9;
++  font-family: "Poppins", sans-serif;
++  background: rgb(217, 217, 217);
+   border-bottom: 1px solid black;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   height: 100%;
+   width: 100%;
+-  grid-column: 1/11; }
+-  .header > figure {
+-    grid-column: 3/4;
+-    display: grid; }
+-    .header > figure > img {
+-      width: 100%;
+-      justify-self: center;
+-      align-self: center; }
+-  .header > p {
+-    grid-column: 5/6;
+-    justify-self: center;
+-    align-self: center;
+-    font-size: 125%; }
++  grid-column: 1/11;
++}
++.header > figure {
++  grid-column: 3/4;
++  display: grid;
++}
++.header > figure > img {
++  width: 100%;
++  justify-self: center;
++  align-self: center;
++}
++.header > p {
++  grid-column: 5/6;
++  justify-self: center;
++  align-self: center;
++  font-size: 125%;
++}
+ 
+ .loginPage {
+   background-color: #c3cbdc;
+-  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); }
++  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
++}
+ 
+ .headerLogin {
+   display: grid;
+-  height: 50vh; }
+-  .headerLogin > img {
+-    width: 50%;
+-    justify-self: center;
+-    align-self: center; }
++  height: 50vh;
++}
++.headerLogin > img {
++  width: 50%;
++  justify-self: center;
++  align-self: center;
++}
+ 
+ .formLogin {
+-  font-family: 'Poppins', sans-serif;
++  font-family: "Poppins", sans-serif;
+   height: 50vh;
+-  display: grid; }
+-  .formLogin > form {
+-    width: 25%;
+-    height: 20%;
+-    justify-self: center;
+-    align-self: start;
+-    margin: 5vh;
+-    display: grid;
+-    grid-template-rows: 1fr 1fr; }
+-    .formLogin > form > input {
+-      border-radius: 20px;
+-      height: 60%;
+-      width: 100%;
+-      justify-self: center;
+-      text-align: center;
+-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+-    .formLogin > form > button {
+-      border-radius: 20px;
+-      height: 60%;
+-      width: 45%;
+-      justify-self: center;
+-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+-    .formLogin > form > button:hover {
+-      border-radius: 20px;
+-      height: 60%;
+-      width: 45%;
+-      justify-self: center;
+-      background-color: #2288C7;
+-      color: white; }
++  display: grid;
++}
++.formLogin > form {
++  width: 25%;
++  height: 20%;
++  justify-self: center;
++  align-self: start;
++  margin: 5vh;
++  display: grid;
++  grid-template-rows: 1fr 1fr;
++}
++.formLogin > form > input {
++  border-radius: 20px;
++  height: 60%;
++  width: 100%;
++  justify-self: center;
++  text-align: center;
++  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
++}
++.formLogin > form > button {
++  border-radius: 20px;
++  height: 60%;
++  width: 45%;
++  justify-self: center;
++  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
++}
++.formLogin > form > button:hover {
++  border-radius: 20px;
++  height: 60%;
++  width: 45%;
++  justify-self: center;
++  background-color: #2288C7;
++  color: white;
++}
+ 
+ .main {
+-  font-family: 'Poppins', sans-serif;
++  font-family: "Poppins", sans-serif;
+   grid-row: 2/11;
+   grid-column: 4/11;
+   display: grid;
+   grid-template-rows: 0.5fr 9fr 0.5fr;
+-  background: #d9d9d9;
+-  border-top: 1px solid black; }
+-  .main > .chat-header {
+-    margin-top: 1vh;
+-    display: grid;
+-    grid-template-columns: 0.45fr 0.55fr;
+-    height: 6.5vh; }
+-    .main > .chat-header > figure {
+-      display: grid; }
+-      .main > .chat-header > figure > img {
+-        padding-right: 0.5vh;
+-        width: 9%;
+-        justify-self: end;
+-        align-self: center; }
+-    .main > .chat-header > h3 {
+-      justify-self: start;
+-      align-self: center;
+-      font-size: 2.5vh; }
+-  .main > .chat-body {
+-    background: white; }
+-  .main > .chat-footer {
+-    display: grid;
+-    grid-template-columns: 7fr 3fr;
+-    background: #d9d9d9; }
+-    .main > .chat-footer > input {
+-      width: 80%;
+-      height: 80%;
+-      justify-self: end;
+-      align-self: center;
+-      border-radius: 20px;
+-      border-color: black;
+-      font-size: 2vh; }
+-    .main > .chat-footer > button {
+-      justify-self: start;
+-      width: 10.5%;
+-      height: 95%;
+-      align-self: center;
+-      border-radius: 20px;
+-      font-size: 3vh;
+-      border-color: black;
+-      background-color: white; }
+-    .main > .chat-footer > button:hover {
+-      justify-self: start;
+-      width: 10.5%;
+-      height: 95%;
+-      align-self: center;
+-      border-radius: 20px;
+-      font-size: 3vh;
+-      border-color: black;
+-      color: white;
+-      background-color: #2288C7; }
++  background: rgb(217, 217, 217);
++  border-top: 1px solid black;
++}
++.main > .chat-header {
++  margin-top: 1vh;
++  display: grid;
++  grid-template-columns: 0.45fr 0.55fr;
++  height: 6.5vh;
++}
++.main > .chat-header > figure {
++  display: grid;
++}
++.main > .chat-header > figure > img {
++  padding-right: 0.5vh;
++  width: 9%;
++  justify-self: end;
++  align-self: center;
++}
++.main > .chat-header > h3 {
++  justify-self: start;
++  align-self: center;
++  font-size: 2.5vh;
++}
++.main > .chat-body {
++  background: white;
++}
++.main > .chat-footer {
++  display: grid;
++  grid-template-columns: 7fr 3fr;
++  background: rgb(217, 217, 217);
++}
++.main > .chat-footer > input {
++  width: 80%;
++  height: 80%;
++  justify-self: end;
++  align-self: center;
++  border-radius: 20px;
++  border-color: black;
++  font-size: 2vh;
++}
++.main > .chat-footer > button {
++  justify-self: start;
++  width: 10.5%;
++  height: 95%;
++  align-self: center;
++  border-radius: 20px;
++  font-size: 3vh;
++  border-color: black;
++  background-color: white;
++}
++.main > .chat-footer > button:hover {
++  justify-self: start;
++  width: 10.5%;
++  height: 95%;
++  align-self: center;
++  border-radius: 20px;
++  font-size: 3vh;
++  border-color: black;
++  color: white;
++  background-color: #2288C7;
++}
+ 
+ .sidebar {
+-  font-family: 'Poppins', sans-serif;
++  font-family: "Poppins", sans-serif;
+   grid-column: 1/4;
+   grid-row: 2/11;
+   border-right: 1px solid black;
+-  background: #d9d9d9;
++  background: rgb(217, 217, 217);
+   display: grid;
+   grid-template-rows: 0.5fr 9.5fr;
+-  border-top: 1px solid black; }
+-  .sidebar > .titleSideBar {
+-    margin-top: 1vh;
+-    height: 6.5vh;
+-    display: grid;
+-    grid-template-columns: 0.45fr 0.55fr; }
+-    .sidebar > .titleSideBar > figure {
+-      display: grid; }
+-      .sidebar > .titleSideBar > figure > img {
+-        padding-right: 0.5vh;
+-        width: 20%;
+-        justify-self: end;
+-        align-self: center; }
+-    .sidebar > .titleSideBar > .channels {
+-      justify-self: start;
+-      align-self: center;
+-      font-size: 2.5vh; }
+-  .sidebar > ul {
+-    background-color: white;
+-    width: 100%;
+-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+-    justify-self: center;
+-    display: grid;
+-    overflow: auto; }
+-    .sidebar > ul > li {
+-      height: 7vh;
+-      display: grid; }
+-      .sidebar > ul > li > button {
+-        justify-self: center;
+-        align-self: center;
+-        border-color: black;
+-        border-radius: 10px;
+-        height: 60%;
+-        width: 70%;
+-        background: #d9d9d9;
+-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+-      .sidebar > ul > li > button:hover {
+-        border-radius: 10px;
+-        height: 60%;
+-        width: 70%;
+-        justify-self: center;
+-        background-color: #2288C7;
+-        color: white;
+-        border-color: black; }
+-    .sidebar > ul > p {
+-      padding: 3vh;
+-      font-size: 2.5vh;
+-      text-align: center; }
++  border-top: 1px solid black;
++}
++.sidebar > .titleSideBar {
++  margin-top: 1vh;
++  height: 6.5vh;
++  display: grid;
++  grid-template-columns: 0.45fr 0.55fr;
++}
++.sidebar > .titleSideBar > figure {
++  display: grid;
++}
++.sidebar > .titleSideBar > figure > img {
++  padding-right: 0.5vh;
++  width: 20%;
++  justify-self: end;
++  align-self: center;
++}
++.sidebar > .titleSideBar > .channels {
++  justify-self: start;
++  align-self: center;
++  font-size: 2.5vh;
++}
++.sidebar > ul {
++  background-color: white;
++  width: 100%;
++  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
++  justify-self: center;
++  display: grid;
++  overflow: auto;
++}
++.sidebar > ul > li {
++  height: 7vh;
++  display: grid;
++}
++.sidebar > ul > li > button {
++  justify-self: center;
++  align-self: center;
++  border-color: black;
++  border-radius: 10px;
++  height: 60%;
++  width: 70%;
++  background: rgb(217, 217, 217);
++  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
++}
++.sidebar > ul > li > button:hover {
++  border-radius: 10px;
++  height: 60%;
++  width: 70%;
++  justify-self: center;
++  background-color: #2288C7;
++  color: white;
++  border-color: black;
++}
++.sidebar > ul > p {
++  padding: 3vh;
++  font-size: 2.5vh;
++  text-align: center;
++}
+ 
+ .body {
+   display: grid;
+   grid-auto-rows: 1fr 9fr;
+   grid-template-columns: repeat(10, 1fr);
+-  height: 100vh; }
++  height: 100vh;
++}
+ 
+ /*# sourceMappingURL=style.css.map */
+Index: client/src/styles/sass/style.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n\"version\": 3,\r\n\"mappings\": \"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\",\r\n\"sources\": [\"style.scss\",\"_reset.scss\",\"_header.scss\",\"_login.scss\",\"_main.scss\",\"_sidebar.scss\",\"_body.scss\"],\r\n\"names\": [],\r\n\"file\": \"style.css\"\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/client/src/styles/sass/style.css.map b/client/src/styles/sass/style.css.map
+--- a/client/src/styles/sass/style.css.map	
++++ b/client/src/styles/sass/style.css.map	
+@@ -1,7 +1,1 @@
+-{
+-"version": 3,
+-"mappings": "AAAA,4DAA4D;AACpD,4EAAoE;ACD5E;;;EAGE;AAEF;;;;;;;;;;;;wBAYyB;EACvB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,SAAS,EAAE,IAAI;EACf,IAAI,EAAE,OAAO;EACb,cAAc,EAAE,QAAQ;;AAE1B,iDAAiD;AACjD;0CAC2C;EACzC,OAAO,EAAE,KAAK;;AAEhB,IAAK;EACH,WAAW,EAAE,CAAC;;AAEhB,MAAO;EACL,UAAU,EAAE,IAAI;;AAElB,aAAc;EACZ,MAAM,EAAE,IAAI;;AAEd;iBACkB;EAChB,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,IAAI;;AAEf,KAAM;EACJ,eAAe,EAAE,QAAQ;EACzB,cAAc,EAAE,CAAC;;AC9CnB,OAAQ;EACN,WAAW,EAAE,qBAAqB;EAClC,UAAU,EAAE,OAAsB;EAClC,aAAa,EAAE,eAAe;EAC9B,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,mBAAmB;EAC1C,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,IAAI;EAEjB,gBAAQ;IACN,WAAW,EAAE,GAAG;IAChB,OAAO,EAAE,IAAI;IACb,sBAAM;MACJ,KAAK,EAAE,IAAI;MACX,YAAY,EAAE,MAAM;MACpB,UAAU,EAAE,MAAM;EAGtB,WAAI;IACF,WAAW,EAAE,GAAG;IAChB,YAAY,EAAE,MAAM;IACpB,UAAU,EAAE,MAAM;IAClB,SAAS,EAAE,IAAI;;ACvBnB,UAAW;EACT,gBAAgB,EAAE,OAAO;EACzB,gBAAgB,EAAE,gDAAgD;;AAGpE,YAAY;EACV,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EAEZ,kBAAM;IACJ,KAAK,EAAE,GAAG;IACV,YAAY,EAAE,MAAM;IACpB,UAAU,EAAE,MAAM;;AAGtB,UAAU;EACR,WAAW,EAAE,qBAAqB;EAClC,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACX,iBAAM;IACJ,KAAK,EAAC,GAAG;IACT,MAAM,EAAE,GAAG;IACX,YAAY,EAAE,MAAM;IACpB,UAAU,EAAE,KAAK;IACjB,MAAM,EAAE,GAAG;IACX,OAAO,EAAE,IAAI;IACb,kBAAkB,EAAE,OAAO;IAE3B,yBAAO;MAEL,aAAa,EAAE,IAAI;MACnB,MAAM,EAAE,GAAG;MACX,KAAK,EAAE,IAAI;MACX,YAAY,EAAE,MAAM;MACpB,UAAU,EAAE,MAAM;MAClB,UAAU,EAAE,gCAAgC;IAE9C,0BAAQ;MACN,aAAa,EAAE,IAAI;MACnB,MAAM,EAAE,GAAG;MACX,KAAK,EAAE,GAAG;MACV,YAAY,EAAE,MAAM;MACpB,UAAU,EAAE,gCAAgC;IAE9C,gCAAc;MACZ,aAAa,EAAE,IAAI;MACnB,MAAM,EAAE,GAAG;MACX,KAAK,EAAE,GAAG;MACV,YAAY,EAAE,MAAM;MACpB,gBAAgB,EAAE,OAAO;MACzB,KAAK,EAAG,KAAK;;AClDrB,KAAM;EACJ,WAAW,EAAE,qBAAqB;EAClC,QAAQ,EAAE,IAAI;EACd,WAAW,EAAC,IAAK;EACjB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,eAAe;EACnC,UAAU,EAAE,OAAsB;EAClC,UAAU,EAAE,eAAe;EAE3B,oBAAc;IACZ,UAAU,EAAE,GAAG;IACf,OAAO,EAAE,IAAI;IACb,qBAAqB,EAAE,aAAa;IACpC,MAAM,EAAE,KAAK;IACb,6BAAQ;MACN,OAAO,EAAE,IAAI;MACb,mCAAM;QACJ,aAAa,EAAE,KAAK;QACpB,KAAK,EAAE,EAAE;QACT,YAAY,EAAE,GAAG;QACjB,UAAU,EAAE,MAAM;IAGtB,yBAAI;MACF,YAAY,EAAE,KAAK;MACnB,UAAU,EAAE,MAAM;MAClB,SAAS,EAAE,KAAK;EAGpB,kBAAY;IACV,UAAU,EAAE,KAAK;EAGnB,oBAAc;IACZ,OAAO,EAAE,IAAI;IACb,qBAAqB,EAAE,OAAO;IAC9B,UAAU,EAAE,OAAsB;IAClC,4BAAO;MACL,KAAK,EAAE,GAAG;MACV,MAAM,EAAE,GAAG;MACX,YAAY,EAAE,GAAG;MACjB,UAAU,EAAE,MAAM;MAClB,aAAa,EAAE,IAAI;MACnB,YAAY,EAAE,KAAK;MACnB,SAAS,EAAE,GAAG;IAEhB,6BAAS;MACP,YAAY,EAAE,KAAK;MACnB,KAAK,EAAE,KAAK;MACZ,MAAM,EAAE,GAAG;MACX,UAAU,EAAE,MAAM;MAClB,aAAa,EAAE,IAAI;MACnB,SAAS,EAAE,GAAG;MACd,YAAY,EAAE,KAAK;MACnB,gBAAgB,EAAE,KAAK;IAEzB,mCAAc;MACZ,YAAY,EAAE,KAAK;MACnB,KAAK,EAAE,KAAK;MACZ,MAAM,EAAE,GAAG;MACX,UAAU,EAAE,MAAM;MAClB,aAAa,EAAE,IAAI;MACnB,SAAS,EAAE,GAAG;MACd,YAAY,EAAE,KAAK;MACnB,KAAK,EAAE,KAAK;MACZ,gBAAgB,EAAE,OAAO;;ACjE/B,QAAS;EACP,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;EAChB,QAAQ,EAAE,IAAI;EACd,YAAY,EAAE,eAAe;EAC7B,UAAU,EAAE,OAAsB;EAClC,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,WAAW;EAC/B,UAAU,EAAE,eAAe;EAE3B,wBAAe;IACb,UAAU,EAAE,GAAG;IACf,MAAM,EAAE,KAAK;IACb,OAAO,EAAE,IAAI;IACb,qBAAqB,EAAE,aAAa;IAEpC,iCAAQ;MACN,OAAO,EAAE,IAAI;MACb,uCAAM;QACJ,aAAa,EAAE,KAAK;QACpB,KAAK,EAAE,GAAG;QACV,YAAY,EAAE,GAAG;QACjB,UAAU,EAAE,MAAM;IAItB,oCAAW;MACT,YAAY,EAAE,KAAK;MACnB,UAAU,EAAE,MAAM;MAClB,SAAS,EAAE,KAAK;EAIpB,aAAI;IACF,gBAAgB,EAAE,KAAK;IACvB,KAAK,EAAE,IAAI;IACX,kBAAkB,EAAE,2CAA2C;IAC/D,YAAY,EAAE,MAAM;IACpB,OAAO,EAAE,IAAI;IACb,QAAQ,EAAC,IAAI;IACb,kBAAI;MAEF,MAAM,EAAE,GAAG;MACX,OAAO,EAAE,IAAI;MACb,2BAAQ;QACN,YAAY,EAAE,MAAM;QACpB,UAAU,EAAE,MAAM;QAClB,YAAY,EAAE,KAAK;QACnB,aAAa,EAAE,IAAI;QACnB,MAAM,EAAE,GAAG;QACX,KAAK,EAAE,GAAG;QACV,UAAU,EAAE,OAAsB;QAClC,UAAU,EAAE,gCAAgC;MAE9C,iCAAc;QACZ,aAAa,EAAE,IAAI;QACnB,MAAM,EAAE,GAAG;QACX,KAAK,EAAE,GAAG;QACV,YAAY,EAAE,MAAM;QACpB,gBAAgB,EAAE,OAAO;QACzB,KAAK,EAAG,KAAK;QACb,YAAY,EAAE,KAAK;IAKvB,iBAAG;MACD,OAAO,EAAE,GAAG;MACZ,SAAS,EAAE,KAAK;MAChB,UAAU,EAAE,MAAM;;ACrExB,KAAM;EACJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,OAAO;EACvB,qBAAqB,EAAE,eAAc;EACrC,MAAM,EAAE,KAAK",
+-"sources": ["style.scss","_reset.scss","_header.scss","_login.scss","_main.scss","_sidebar.scss","_body.scss"],
+-"names": [],
+-"file": "style.css"
+-}
++{"version":3,"sourceRoot":"","sources":["style.scss","_reset.scss","_header.scss","_login.scss","_main.scss","_sidebar.scss","_body.scss"],"names":[],"mappings":"AAAA;AACQ;ACDR;AAAA;AAAA;AAAA;AAKA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAaE;EACA;EACA;EACA;EACA;EACA;;;AAEF;AACA;AAAA;EAEE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;AAAA;EAEE;EACA;;;AAEF;EACE;EACA;;;AC9CF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AACA;EACE;EACA;EACA;;AAGJ;EACE;EACA;EACA;EACA;;;ACvBJ;EACE;EACA;;;AAGF;EACE;EACA;;AAEA;EACE;EACA;EACA;;;AAGJ;EACE;EACA;EACA;;AACE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EAEE;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;;AClDR;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AACA;EACE;;AACA;EACE;EACA;EACA;EACA;;AAGJ;EACE;EACA;EACA;;AAGJ;EACE;;AAGF;EACE;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACjEN;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;;AACA;EACE;EACA;EACA;EACA;;AAIJ;EACE;EACA;EACA;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EAEE;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAKJ;EACE;EACA;EACA;;;ACrEN;EACE;EACA;EACA;EACA","file":"style.css"}
+\ No newline at end of file

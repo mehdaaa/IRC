@@ -1,0 +1,36 @@
+.header {
+  font-family: 'Poppins', sans-serif;
+  background: rgba(217, 217, 217, 1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 15vh;
+  width: 100%;
+  grid-column: 1/11;
+
+  &>figure{
+    grid-column: 3/4;
+    display: grid;
+    &>img {
+      width: 100%;
+      justify-self: center;
+      align-self: center;
+      }
+  }
+  &>.connection {
+    grid-column: 5/6;
+    justify-self: center;
+    align-self: center;
+    font-size: 125%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 20vw;
+    &>b {
+
+    }
+    &>.username {
+      color : #2288C7;
+      font-weight: bold;
+    }
+  }
+}

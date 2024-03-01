@@ -1,0 +1,336 @@
+/*sass --watch .\src\styles\sass\style.css:.\src\index.css*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.App {
+  display: grid;
+  height: 100vh; }
+
+.body {
+  display: grid;
+  grid-auto-rows: 1fr 9fr;
+  grid-template-columns: repeat(10, 1fr);
+  height: 100vh; }
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  background: #d9d9d9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 15vh;
+  width: 100%;
+  grid-column: 1/11; }
+  .header > figure {
+    grid-column: 3/4;
+    display: grid; }
+    .header > figure > img {
+      width: 100%;
+      justify-self: center;
+      align-self: center; }
+  .header > .connection {
+    grid-column: 5/6;
+    justify-self: center;
+    align-self: center;
+    font-size: 125%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 20vw; }
+    .header > .connection > .username {
+      color: #2288C7;
+      font-weight: bold; }
+
+.loginPage {
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); }
+
+.headerLogin {
+  display: grid;
+  height: 50vh; }
+  .headerLogin > img {
+    width: 50%;
+    justify-self: center;
+    align-self: center; }
+
+.formLogin {
+  font-family: 'Poppins', sans-serif;
+  height: 50vh;
+  display: grid; }
+  .formLogin > form {
+    width: 25%;
+    height: 20%;
+    justify-self: center;
+    align-self: start;
+    margin: 5vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    .formLogin > form > input {
+      border-radius: 20px;
+      height: 60%;
+      width: 100%;
+      justify-self: center;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .formLogin > form > button {
+      border-radius: 20px;
+      height: 60%;
+      width: 45%;
+      justify-self: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .formLogin > form > button:hover {
+      border-radius: 20px;
+      height: 60%;
+      width: 45%;
+      justify-self: center;
+      background-color: #2288C7;
+      color: white; }
+
+.main {
+  font-family: 'Poppins', sans-serif;
+  grid-row: 2/3;
+  grid-column: 4/11;
+  display: grid;
+  grid-template-rows: 0.5fr 9fr 0.5fr;
+  background: #d9d9d9;
+  border-top: 1px solid black; }
+  .main > .chat-header {
+    display: grid;
+    grid-template-columns: 0.40fr 0.42fr 0.18fr;
+    height: 7vh; }
+    .main > .chat-header > figure {
+      display: grid; }
+      .main > .chat-header > figure > img {
+        padding-top: 0.3vh;
+        padding-right: 0.5vh;
+        width: 6.5vh;
+        justify-self: end;
+        align-self: center; }
+    .main > .chat-header > h3 {
+      justify-self: start;
+      align-self: center;
+      font-size: 2.5vh;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 70%; }
+    .main > .chat-header > p {
+      justify-self: start;
+      align-self: center;
+      font-size: 125%; }
+  .main > .chat-body {
+    background: white;
+    overflow: auto;
+    height: 73.8vh; }
+    .main > .chat-body > .message {
+      margin-left: 4vh;
+      margin-right: 4vh;
+      margin-bottom: 2vh; }
+      .main > .chat-body > .message > .message-content {
+        font-weight: normal;
+        margin-top: 1vh;
+        word-wrap: break-word; }
+      .main > .chat-body > .message > .message-infos {
+        font-style: italic;
+        margin-top: 2vh;
+        color: #2288C7; }
+        .main > .chat-body > .message > .message-infos .tm {
+          opacity: 0.5;
+          margin-left: 0.5vh;
+          color: black; }
+        .main > .chat-body > .message > .message-infos > b {
+          opacity: 1; }
+    .main > .chat-body > .noRoomContainer {
+      padding: 3vh;
+      font-size: 2.5vh;
+      text-align: center; }
+  .main > .commands-list {
+    background: white;
+    overflow: auto;
+    height: 73.8vh; }
+    .main > .commands-list > div {
+      margin-top: 2vh;
+      margin-left: 4vh;
+      color: #2288C7;
+      font-weight: bold; }
+    .main > .commands-list > ul {
+      margin-top: 4vh;
+      margin-left: 4vh; }
+      .main > .commands-list > ul > li {
+        margin-bottom: 2vh; }
+        .main > .commands-list > ul > li > b {
+          color: #2288C7;
+          font-weight: bold; }
+  .main > .channels-list {
+    background: white;
+    overflow: auto;
+    height: 73.8vh; }
+    .main > .channels-list > div {
+      margin-top: 2vh;
+      margin-left: 4vh;
+      color: #2288C7;
+      font-weight: bold; }
+    .main > .channels-list > ul {
+      margin-top: 4vh;
+      margin-left: 4vh; }
+      .main > .channels-list > ul > li {
+        margin-bottom: 2vh; }
+  .main > .users-list {
+    background: white;
+    overflow: auto;
+    height: 73.8vh; }
+    .main > .users-list > div {
+      margin-top: 2vh;
+      margin-left: 4vh;
+      color: #2288C7;
+      font-weight: bold; }
+    .main > .users-list > ul {
+      margin-top: 4vh;
+      margin-left: 4vh; }
+      .main > .users-list > ul > li {
+        margin-bottom: 2vh; }
+  .main > .chat-footer {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    background: #d9d9d9; }
+    .main > .chat-footer > input {
+      width: 70%;
+      height: 70%;
+      justify-self: end;
+      align-self: center;
+      border-radius: 20px;
+      border-color: black;
+      font-size: 2vh; }
+    .main > .chat-footer > button {
+      justify-self: start;
+      width: 10%;
+      height: 90%;
+      align-self: center;
+      border-radius: 20px;
+      font-size: 3vh;
+      border-color: black;
+      background-color: white; }
+    .main > .chat-footer > button:hover {
+      justify-self: start;
+      width: 10%;
+      height: 90%;
+      align-self: center;
+      border-radius: 20px;
+      font-size: 3vh;
+      border-color: black;
+      color: white;
+      background-color: #2288C7; }
+
+.sidebar {
+  font-family: 'Poppins', sans-serif;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  border-right: 1px solid black;
+  background: #d9d9d9;
+  border-top: 1px solid black;
+  display: grid;
+  grid-template-rows: 0.5fr 9.5fr;
+  overflow: auto; }
+  .sidebar > .titleSideBar {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    height: 7vh; }
+    .sidebar > .titleSideBar > figure {
+      display: grid; }
+      .sidebar > .titleSideBar > figure > img {
+        padding-right: 0.5vh;
+        padding-top: 0.5vh;
+        width: 6vh;
+        justify-self: end;
+        align-self: center; }
+    .sidebar > .titleSideBar > .channels {
+      justify-self: start;
+      align-self: center;
+      font-size: 2.5vh; }
+  .sidebar > ul {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    display: grid;
+    overflow: auto;
+    grid-template-rows: repeat(11, 1fr); }
+    .sidebar > ul > li {
+      height: 7vh;
+      display: grid; }
+      .sidebar > ul > li > button {
+        justify-self: center;
+        align-self: center;
+        border-color: black;
+        border-radius: 10px;
+        height: 60%;
+        width: 70%;
+        background: #d9d9d9;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .sidebar > ul > li > button:active {
+        border-radius: 10px;
+        height: 60%;
+        width: 70%;
+        justify-self: center;
+        background-color: #2288C7;
+        color: white;
+        border-color: black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .sidebar > ul > p {
+      padding: 3vh;
+      font-size: 2.5vh;
+      text-align: center; }
+
+.activeRoom {
+  background-color: grey; }
+
+/*# sourceMappingURL=style.css.map */

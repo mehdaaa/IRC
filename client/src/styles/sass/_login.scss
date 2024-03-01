@@ -1,0 +1,54 @@
+.loginPage {
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+}
+
+.headerLogin{
+  display: grid;
+  height: 50vh;
+
+  &>img {
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+}
+.formLogin{
+  font-family: 'Poppins', sans-serif;
+  height: 50vh;
+  display: grid;
+    &>form{
+      width:25%;
+      height: 20%;
+      justify-self: center;
+      align-self: start;
+      margin: 5vh;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+      &>input{
+        //border-color: black;
+        border-radius: 20px;
+        height: 60%;
+        width: 100%;
+        justify-self: center;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      &>button{
+        border-radius: 20px;
+        height: 60%;
+        width: 45%;
+        justify-self: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      &>button:hover{
+        border-radius: 20px;
+        height: 60%;
+        width: 45%;
+        justify-self: center;
+        background-color: #2288C7;
+        color : white;
+      }
+    }
+}

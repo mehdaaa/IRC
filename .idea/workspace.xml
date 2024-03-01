@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a694d1ac-a05e-497c-af86-81ced1a535a0" name="Changes" comment="room by keyword">
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CommandsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CommandsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/Repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/Repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+    </list>
+    <list id="8a36c42f-1a42-4a95-9f4c-6c722ab04810" name="Changes by hyjgbhb" comment="Same as before" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="room-by-keyword" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\Program Files\PHP\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bLf79cZnnV95tiryNSrJixZGJs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Node.js.Chat.jsx.executor": "Debug",
+    "Node.js.index.js.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "fix-update-name",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Projet/T-DEV-600-REN_2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start (1).executor": "Run",
+    "npm.start.executor": "Run",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Users\\mehdi\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projet\T-JSF-600-REN_9\client\src" />
+      <recent name="C:\Projet\T-JSF-600-REN_9\client\src\components" />
+      <recent name="C:\Projet\T-JSF-600-REN_9\client\src\pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a694d1ac-a05e-497c-af86-81ced1a535a0" name="Changes" comment="" />
+      <created>1705999109776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705999109776</updated>
+      <workItem from="1705999110917" duration="1509000" />
+      <workItem from="1706621538276" duration="7380000" />
+      <workItem from="1706868205871" duration="200000" />
+      <workItem from="1706868424957" duration="17539000" />
+      <workItem from="1707154761895" duration="9000" />
+      <workItem from="1707212108895" duration="695000" />
+      <workItem from="1707225067981" duration="2960000" />
+      <workItem from="1707314593728" duration="1213000" />
+      <workItem from="1707417613021" duration="40000" />
+      <workItem from="1707494644317" duration="301000" />
+      <workItem from="1707728139058" duration="196000" />
+      <workItem from="1707728356679" duration="13807000" />
+      <workItem from="1707754259881" duration="15482000" />
+      <workItem from="1707813336252" duration="26932000" />
+      <workItem from="1707900250707" duration="10777000" />
+      <workItem from="1707921836449" duration="17994000" />
+      <workItem from="1708003789427" duration="4200000" />
+      <workItem from="1708089830148" duration="6349000" />
+      <workItem from="1708278578476" duration="38000" />
+      <workItem from="1708335453682" duration="5822000" />
+      <workItem from="1708957497249" duration="15000" />
+    </task>
+    <task id="LOCAL-00001" summary="Setup React and architecture">
+      <option name="closed" value="true" />
+      <created>1706000030021</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706000030021</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Setup sending messages, join room, setup username and the chat room">
+      <option name="closed" value="true" />
+      <created>1706621775447</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706621775447</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Chat.jsx">
+      <option name="closed" value="true" />
+      <created>1706622633852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706622633852</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add styles and components">
+      <option name="closed" value="true" />
+      <created>1707144152591</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707144152591</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add routes and update architecture">
+      <option name="closed" value="true" />
+      <created>1707212201039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707212201039</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update App.jsx + HTML Sidebar and Header">
+      <option name="closed" value="true" />
+      <created>1707226443968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707226443968</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add instant chat">
+      <option name="closed" value="true" />
+      <created>1707236370317</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707236370317</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add create room">
+      <option name="closed" value="true" />
+      <created>1707417645856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417645856</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add commands">
+      <option name="closed" value="true" />
+      <created>1707494684215</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707494684215</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update messages and join room">
+      <option name="closed" value="true" />
+      <created>1707745590789</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707745590790</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix create room">
+      <option name="closed" value="true" />
+      <created>1707746598548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707746598548</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix join room">
+      <option name="closed" value="true" />
+      <created>1707749061575</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707749061575</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update get_messages, add components channels, users, commands, reset input, add toast">
+      <option name="closed" value="true" />
+      <created>1707777036275</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707777036275</updated>
+    </task>
+    <task id="LOCAL-00014" summary="same as before">
+      <option name="closed" value="true" />
+      <created>1707777072646</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707777072646</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update channelsList">
+      <option name="closed" value="true" />
+      <created>1707781009887</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707781009887</updated>
+    </task>
+    <task id="LOCAL-00016" summary="same as before">
+      <option name="closed" value="true" />
+      <created>1707781023989</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707781023989</updated>
+    </task>
+    <task id="LOCAL-00017" summary="error management in join room">
+      <option name="closed" value="true" />
+      <created>1707819246548</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707819246548</updated>
+    </task>
+    <task id="LOCAL-00018" summary="error management create_user and create_room">
+      <option name="closed" value="true" />
+      <created>1707823778433</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707823778433</updated>
+    </task>
+    <task id="LOCAL-00019" summary="error management create_user and create_room">
+      <option name="closed" value="true" />
+      <created>1707823794540</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707823794540</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fix success message">
+      <option name="closed" value="true" />
+      <created>1707830926505</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1707830926505</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fix instant chat, fix toast">
+      <option name="closed" value="true" />
+      <created>1707925454390</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1707925454390</updated>
+    </task>
+    <task id="LOCAL-00022" summary="same as before">
+      <option name="closed" value="true" />
+      <created>1707925483995</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1707925483995</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add leave room, get users by room">
+      <option name="closed" value="true" />
+      <created>1707954785478</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1707954785478</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Same as before">
+      <option name="closed" value="true" />
+      <created>1707954802236</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1707954802236</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fix get users by room">
+      <option name="closed" value="true" />
+      <created>1707955815516</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1707955815516</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updates users list and toast">
+      <option name="closed" value="true" />
+      <created>1708010652190</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708010652190</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update room name + clean code">
+      <option name="closed" value="true" />
+      <created>1708276007330</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276007331</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add toast">
+      <option name="closed" value="true" />
+      <created>1708276365190</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276365190</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix deleteRoom">
+      <option name="closed" value="true" />
+      <created>1708277413957</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1708277413957</updated>
+    </task>
+    <task id="LOCAL-00030" summary="room by keyword">
+      <option name="closed" value="true" />
+      <created>1708278423939</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1708278423939</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add Chat.jsx" />
+    <MESSAGE value="Add styles and components" />
+    <MESSAGE value="Add routes and update architecture" />
+    <MESSAGE value="Update App.jsx + HTML Sidebar and Header" />
+    <MESSAGE value="Add instant chat" />
+    <MESSAGE value="Add create room" />
+    <MESSAGE value="Add commands" />
+    <MESSAGE value="Update messages and join room" />
+    <MESSAGE value="Fix create room" />
+    <MESSAGE value="Fix join room" />
+    <MESSAGE value="Update get_messages, add components channels, users, commands, reset input, add toast" />
+    <MESSAGE value="update channelsList" />
+    <MESSAGE value="error management in join room" />
+    <MESSAGE value="error management create_user and create_room" />
+    <MESSAGE value="Fix success message" />
+    <MESSAGE value="Fix instant chat, fix toast" />
+    <MESSAGE value="same as before" />
+    <MESSAGE value="Add leave room, get users by room" />
+    <MESSAGE value="Same as before" />
+    <MESSAGE value="Fix get users by room" />
+    <MESSAGE value="Updates users list and toast" />
+    <MESSAGE value="Update room name + clean code" />
+    <MESSAGE value="add toast" />
+    <MESSAGE value="fix deleteRoom" />
+    <MESSAGE value="room by keyword" />
+    <option name="LAST_COMMIT_MESSAGE" value="room by keyword" />
+  </component>
+</project>
